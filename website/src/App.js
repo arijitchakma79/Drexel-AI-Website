@@ -1,11 +1,12 @@
 import AboutUs from './Components/about';
 import club_data from './club_data.json';
-import HomePage from './Components/home';
+import Navbar from './Components/navbar';
+import Homepage from './Components/homepage';
 
 const App = () => {
   return (
     <div >
-      <HomePage />
+      <Homepage data={club_data.main}/>
     </div>
   );
 };
