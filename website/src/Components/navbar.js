@@ -13,22 +13,22 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faHome} />
           </NavLink>
           {/* About us section */}
-          <NavLink to="/about" className="text-red-700 hover:text-gray-900 font-medium">
+          <NavLink to="/about" className="text-red-700 hover:text-gray-900 font-medium text-xl">
             About Us
           </NavLink>
 
           {/* Research Section */}
-          <NavLink to="/research" className="text-red-700 hover:text-gray-900 font-medium">
+          <NavLink to="/research" className="text-red-700 hover:text-gray-900 font-medium text-xl">
             Research
           </NavLink>
 
           {/* Project Section */}
-          <NavLink to="/projects" className="text-red-700 hover:text-gray-900 font-medium">
+          <NavLink to="/projects" className="text-red-700 hover:text-gray-900 font-medium text-xl">
             Projects
           </NavLink>
 
           {/* Events */}
-          <NavLink to="/events" className="text-red-700 hover:text-gray-900 font-medium">
+          <NavLink to="/events" className="text-red-700 hover:text-gray-900 font-medium text-xl">
             Events
           </NavLink>
         </div>

@@ -13,6 +13,19 @@
         "city":"Philadelphia",
         "state":"PA",
         "zip": "19104"
+          
+        },
+        "AboutUS" : {
+          "whoWeAre": "Drexel AI is driven by a mission to facilitate the exploration and understanding of Artificial Intelligence and Machine Learning among the Drexel University community. We strive to create an inclusive and supportive environment where students can engage in AI-related activities, expand their knowledge, and develop practical skills. By offering resources, workshops, and collaborative opportunities, we aim to equip Dragons with the tools they need to navigate the ever-evolving world of AI.",
+          "mission": "Drexel AI is driven by a mission to facilitate the exploration and understanding of Artificial Intelligence and Machine Learning among the Drexel University community. We strive to create an inclusive and supportive environment where students can engage in AI-related activities, expand their knowledge, and develop practical skills. By offering resources, workshops, and collaborative opportunities, we aim to equip Dragons with the tools they need to navigate the ever-evolving world of AI.",
+          "WhatWeDo": [
+            "Education and Workshops: We organize educational sessions and workshops led by experienced members and industry professionals to introduce and deepen understanding of AI and machine learning concepts. These hands-on learning opportunities provide a solid foundation for members to explore the field further.",
+            "Research and Projects: Drexel AI encourages members to participate in research and project development related to AI. Through collaborative efforts, we tackle real-world challenges and explore innovative solutions using machine learning techniques. These projects offer valuable practical experience and an avenue for applying theoretical knowledge.",
+            "Networking and Community Building: We foster a strong community of AI enthusiasts by organizing networking events, panel discussions, and guest speaker sessions. These gatherings provide opportunities for members to connect with like-minded individuals, learn from experts, and expand their professional network.",
+            "Hackathons and Competitions: Drexel AI hosts hackathons and encourages participation in AI competitions. These events challenge members to apply their skills, creativity, and problem-solving abilities to develop AI-powered solutions within a limited timeframe. Such experiences boost individual growth and foster teamwork.",
+            "Industry Partnerships: We establish connections with AI companies, organizations, and researchers to facilitate internships, mentorship opportunities, and industry exposure for our members. Through these partnerships, we aim to bridge the gap between academia and industry, fostering career development in the field of AI."
+          ], 
+          "last": "Whether you are a seasoned AI enthusiast or just beginning to explore the field, we welcome you to join Drexel AI. By becoming a member, you gain access to a supportive community, educational resources,networking opportunities, and the chance to contribute to cutting-edge research and projects. Don't miss out on the chance to gain an advantage in the world of AI."
       },
       "website": "https://dragonlink.drexel.edu/engage/organization/drexelai",
       "resumedownload":"http://timbakerdev.com",
@@ -66,25 +79,25 @@
       ],
       "skills":[
         {
-          "name":"Yigit Alparslan",
-          "position":"President, Founder",
+          "name":"Alex Zevelny",
+          "position":"President",
           "image":"yigit.jpg",
           "level":"60%"
         },
         {
-          "name":"Hung Do",
-          "position":"Co Vice-President",
+          "name":"Rithvik Sukumaran",
+          "position":"Vice-President",
           "image":"hung.jpg",
           "level":"55%"
         },
         {
-          "name":"Allie Do",
-          "position":"Chair of Finance",
+          "name":"Bobby Nguyen",
+          "position":"Treasurer",
           "image":"allie.jpg",
           "level":"50%"
         },
         {
-          "name":"Neel Kumtakar",
+          "name":"Arijit Chakma",
           "position":"Event Coordinator",
           "image":"neel.png",
           "level":"90%"
