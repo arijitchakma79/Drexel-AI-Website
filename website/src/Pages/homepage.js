@@ -8,7 +8,7 @@ import {
   faGithub,
   faSlack
 } from "@fortawesome/free-brands-svg-icons";
-import Navbar from './navbar';
+import Navbar from '../Components/navbar';
 
 const Homepage = (props) => {
   const [typedText, setTypedText] = useState("");
