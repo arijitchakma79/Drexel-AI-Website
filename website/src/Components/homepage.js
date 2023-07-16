@@ -63,10 +63,10 @@ const Homepage = (props) => {
             <a href="https://www.slack.com">
               <FontAwesomeIcon icon={faSlack} className="text-white text-3xl" />
             </a>
-          </div>
+          </div> {/*
           <button className="mt-4 bg-white text-black font-bold py-2 px-4 rounded" onClick={handleGetStartedClick}>
             Get Started
-          </button>
+          </button>*/}
 
         </div>
       </div>

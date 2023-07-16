@@ -1,18 +1,14 @@
 import React from 'react';
 import Navbar from './navbar';
 
-const AboutUs = (props) => {
+const AboutUs = () => {
   return (
     <div>
-    <header>
       <Navbar />
-    </header>
-    <div className='bg-cover' w-screen h-screen style={{ backgroundImage: `url("/images/pxfuel.jpg")` }}><h1>{props.data.name}</h1>
-      <p>{props.data.description}</p>
-      </div>
-      
-    </div>
-  );
-};
+      <h1>Hello World</h1>
 
-export default AboutUs;
+    </div>
+  )
+}
+
+export default AboutUs
