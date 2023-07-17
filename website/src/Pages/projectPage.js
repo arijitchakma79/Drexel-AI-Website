@@ -1,14 +1,14 @@
 import React from "react";
-import Research from "../Components/research";
+import Project from "../Components/projects";
 import Navbar from "../Components/navbar";
 
-const ResearchPage = () => {
+const ProjectPage = () => {
   return (
     <div>
     <Navbar/>
-      <Research />
+      <Project/>
     </div>
   );
 };
 
-export default ResearchPage;
+export default ProjectPage;
