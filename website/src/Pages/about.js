@@ -1,5 +1,4 @@
 import React from 'react';
-import NavbarAbout from '../Components/navbarAbout';
 import Navbar from '../Components/navbar';
 import PurposeComponent from '../Components/purpose';
 import club_data from '../club_data.json';

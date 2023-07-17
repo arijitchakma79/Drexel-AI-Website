@@ -31,7 +31,7 @@ const Homepage = (props) => {
     return () => {
       clearTimeout(timer);
     };
-  }, [props.data.description]);
+  }, [props.data.description,props.data.address.city, props.data.occupation]);
 
   return (
     <div>

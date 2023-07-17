@@ -1,7 +1,5 @@
 import React from 'react';
 import Team from "../Components/teamCom";
-import Navbar from "../Components/navbar";
-import NavbarAbout from "../Components/navbarAbout";
 import club_data from "../club_data.json";
 import Ambassadors from '../Components/ambassadors';
 

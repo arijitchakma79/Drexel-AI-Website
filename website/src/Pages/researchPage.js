@@ -12,5 +12,4 @@ const ResearchPage = () => {
     </div>
   );
 };
-
 export default ResearchPage;

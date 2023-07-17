@@ -1,14 +1,16 @@
 import React from "react";
 
+
 const PurposeComponent = (props) => {
-  const renderList = (list) => {
+  //Function which makes a list of our "what we do points
+  const renderList = (list) => {          
     return list.map((item, index) => (
       <li key={index} className="list-disc ml-4">
         {item}
       </li>
     ));
   };
-
+  
   return (
     <div>
       <div>

@@ -28,9 +28,9 @@ const Navbar = () => {
           </NavLink>
 
           {/* Events */}
-          <NavLink to="/events" className="text-red-700 hover:text-gray-900 font-medium text-xl">
+          <a href=" https://drexel.campuslabs.com/engage/organization/drexelai" className="text-red-700 hover:text-gray-900 font-medium text-xl">
             Events
-          </NavLink>
+          </a>
         </div>
       </nav>
     </div>

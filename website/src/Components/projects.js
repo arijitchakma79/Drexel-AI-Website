@@ -1,78 +1,27 @@
-import React from 'react';
+//Component for Research Page
 
-const Projects = () => {
-  const projects = [
-    {
-      title: 'ISSS ChatBot',
-      category: 'NLP & TensorFlow & DialogFlow',
-      image: 'isss-chatbot-thumb.jpg',
-      url: 'https://github.com/drexelai/isss-chatbot',
-      year: 2022,
-    },
-    {
-      title: 'Food Image Classifier for Efficient Refund Process',
-      category: 'TensorFlow, Neural Network',
-      image: 'picnic-thumb.jpg',
-      url: 'https://github.com/drexelai/Picnic-Hackathon',
-      year: 2022,
-    },
-    {
-      title: 'Stock Market Predictor',
-      category: 'Python',
-      image: 'stock.jpg',
-      url: 'https://github.com/drexelai/Stock-Market',
-      year: 2021,
-    },
-    {
-      title: 'Othello Game AI',
-      category: 'Othello',
-      image: 'othello.jpg',
-      url: 'https://github.com/drexelai/othello-ai',
-      year: 2021,
-    },
-  ];
-
-  // Extract unique years from projects
-  const years = [...new Set(projects.map((project) => project.year))];
-
+const Projects = (props) => {
   return (
     <div>
-      <h1 className="text-blue-900 pt-12 text-2xl font-bold pb-4 pl-8">Projects Page</h1>
-      
-      {/* Year List */}
-      <div className="flex justify-center">
-        <ul className="flex space-x-4 my-4">
-          {years.map((year) => (
-            <li key={year}>
-              <a href={`#${year}`} className="text-blue-500 hover:underline">
-                {year}
-              </a>
-            </li>
-          ))}
-        </ul>
+      <h1 className="text-2xl font-bold">Projects</h1>
+      <p>Our projects are listed below:</p>
+      <div className="grid grid-cols-1 gap-4">
+        {props.data.portfolio.projects.map((project) => (
+          <div key={project.title} className="border rounded p-4">
+            <h2 className="text-xl font-bold">{project.title}</h2>
+            <p className="text-sm">{project.category}</p>
+            <p className="text-sm">{project.year}</p>
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              View Project
+            </a>
+          </div>
+        ))}
       </div>
-
-      {/* Project List */}
-      {years.map((year) => (
-        <div key={year}>
-          <h2 id={year} className="text-lg font-bold text-blue-900 py-2 pl-8">
-            {year}
-          </h2>
-          <ul className="pl-8">
-            {projects
-              .filter((project) => project.year === year)
-              .map((project, index) => (
-                <li key={index} className="mb-2">
-                  <span className="font-bold">{project.title}</span> - {project.category}
-                  <br />
-                  <a href={project.url} className="text-blue-500 hover:underline">
-                    Project Link
-                  </a>
-                </li>
-              ))}
-          </ul>
-        </div>
-      ))}
     </div>
   );
 };
