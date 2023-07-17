@@ -81,26 +81,36 @@
         {
           "name":"Alex Zevelny",
           "position":"President",
-          "image":"yigit.jpg",
-          "level":"60%"
+          "image":"alex.png",
+          "level":"60%",
+          "major": "Computer Science",
+          "grade": "Pre Junior"
+
         },
         {
           "name":"Rithvik Sukumaran",
           "position":"Vice-President",
-          "image":"hung.jpg",
-          "level":"55%"
+          "image":"rithvik.png",
+          "level":"55%",
+          "major": "Data Science",
+          "grade": "Pre Junior"
+          
         },
         {
           "name":"Bobby Nguyen",
           "position":"Treasurer",
-          "image":"allie.jpg",
-          "level":"50%"
+          "image":"bobby.jpg",
+          "level":"50%",
+          "major": "Computer Science",
+          "grade": "Sophomore"
         },
         {
           "name":"Arijit Chakma",
           "position":"Event Coordinator",
-          "image":"neel.png",
-          "level":"90%"
+          "image":"arijit.jpg",
+          "level":"90%",
+          "major": "Computer Science",
+          "grade": "Sophomore"
         }
       ],
       "ambassadors":[
@@ -131,30 +141,37 @@
       ]
     },
     "portfolio":{
+      "research": [
+        
+      ],
       "projects": [
         {
           "title":"ISSS ChatBot",
           "category":"NLP & TensorFlow & DialogFlow",
           "image":"isss-chatbot-thumb.jpg",
-          "url":"https://github.com/drexelai/isss-chatbot"
+          "url":"https://github.com/drexelai/isss-chatbot",
+          "year":2022
         },
         {
           "title":"Food Image Classifier for Efficient Refund Process",
           "category":"TensorFlow, Neural Network",
           "image":"picnic-thumb.jpg",
-          "url":"https://github.com/drexelai/Picnic-Hackathon"
+          "url":"https://github.com/drexelai/Picnic-Hackathon",
+          "year":2022
         },
         {
           "title":"Stock Market Predictor",
           "category":"Python",
           "image":"stock.jpg",
-          "url":"https://github.com/drexelai/Stock-Market"
+          "url":"https://github.com/drexelai/Stock-Market",
+          "year": 2021
         },
         {
           "title":"Othello Game AI",
           "category":"Othello",
           "image":"othello.jpg",
-          "url":"https://github.com/drexelai/othello-ai"
+          "url":"https://github.com/drexelai/othello-ai",
+          "year": 2021
         }
       ]
     },
