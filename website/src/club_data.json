@@ -142,6 +142,34 @@
     },
     "portfolio":{
       "research": [
+        {
+          "title":"ISSS ChatBot",
+          "category":"NLP & TensorFlow & DialogFlow",
+          "image":"isss-chatbot-thumb.jpg",
+          "url":"https://github.com/drexelai/isss-chatbot",
+          "year":2022
+        },
+        {
+          "title":"Food Image Classifier for Efficient Refund Process",
+          "category":"TensorFlow, Neural Network",
+          "image":"picnic-thumb.jpg",
+          "url":"https://github.com/drexelai/Picnic-Hackathon",
+          "year":2022
+        },
+        {
+          "title":"Stock Market Predictor",
+          "category":"Python",
+          "image":"stock.jpg",
+          "url":"https://github.com/drexelai/Stock-Market",
+          "year": 2021
+        },
+        {
+          "title":"Othello Game AI",
+          "category":"Othello",
+          "image":"othello.jpg",
+          "url":"https://github.com/drexelai/othello-ai",
+          "year": 2021
+        }
         
       ],
       "projects": [
