@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import "../index.css";
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <div className="bg-blue-900 bg-opacity-50">
       <nav className="container mx-auto py-4">
@@ -12,25 +18,85 @@ const Navbar = () => {
           <NavLink to="/" className="text-white text-2xl">
             <FontAwesomeIcon icon={faHome} />
           </NavLink>
-          {/* About us section */}
-          <NavLink to="/about" className="text-red-700 hover:text-gray-900 font-medium text-xl">
-            About Us
-          </NavLink>
+          <div className={`md:hidden ${isMobileMenuOpen ? "flex" : "hidden"}`}>
+            {/* Mobile menu items */}
+            <NavLink
+              to="/about"
+              className="text-white block py-2 hover:bg-gray-900 text-sm"
+            >
+              About Us
+            </NavLink>
+            <NavLink
+              to="/research"
+              className="text-white block py-2 hover:bg-gray-900 text-sm"
+            >
+              Research
+            </NavLink>
+            <NavLink
+              to="/projects"
+              className="text-white block py-2 hover:bg-gray-900 text-sm"
+            >
+              Projects
+            </NavLink>
+            <a
+              href="https://drexel.campuslabs.com/engage/organization/drexelai"
+              className="text-white block py-2 hover:bg-gray-900 text-sm"
+            >
+              Events
+            </a>
+          </div>
+          {/* Hamburger menu */}
+          <div className="md:hidden">
+            <button className="text-white" onClick={toggleMobileMenu}>
+              <svg
+                className="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+          <div className="hidden md:flex space-x-4">
+            {/* About us section */}
+            <NavLink
+              to="/about"
+              className="text-red-700 hover:text-gray-900 font-medium text-xl lg:text-lg xl:text-lg"
+            >
+              About Us
+            </NavLink>
 
-          {/* Research Section */}
-          <NavLink to="/research" className="text-red-700 hover:text-gray-900 font-medium text-xl">
-            Research
-          </NavLink>
+            {/* Research Section */}
+            <NavLink
+              to="/research"
+              className="text-red-700 hover:text-gray-900 font-medium text-xl lg:text-lg xl:text-lg"
+            >
+              Research
+            </NavLink>
 
-          {/* Project Section */}
-          <NavLink to="/projects" className="text-red-700 hover:text-gray-900 font-medium text-xl">
-            Projects
-          </NavLink>
+            {/* Project Section */}
+            <NavLink
+              to="/projects"
+              className="text-red-700 hover:text-gray-900 font-medium text-xl lg:text-lg xl:text-lg"
+            >
+              Projects
+            </NavLink>
 
-          {/* Events */}
-          <a href=" https://drexel.campuslabs.com/engage/organization/drexelai" className="text-red-700 hover:text-gray-900 font-medium text-xl">
-            Events
-          </a>
+            {/* Events */}
+            <a
+              href="https://drexel.campuslabs.com/engage/organization/drexelai"
+              className="text-red-700 hover:text-gray-900 font-medium text-xl lg:text-lg xl:text-lg"
+            >
+              Events
+            </a>
+          </div>
         </div>
       </nav>
     </div>

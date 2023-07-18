@@ -6,7 +6,7 @@ const Ambassadors = (props) => {
       {props.data.team.ambassadors.map((person, index) => (
         <div
           key={index}
-          className="w-1/4 p-4"
+          className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 p-4"
           // Add additional styling as per your design requirements
         >
           <div className="flex flex-col items-center mb-4">
