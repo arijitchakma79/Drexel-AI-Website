@@ -43,26 +43,26 @@ const Homepage = (props) => {
         style={{ backgroundImage: `url("/images/bg2.jpg")` }}
       >
         <div className="text-center mx-auto w-1/2">
-          <h1 className="text-white pb-8 font-bold text-8xl md:text-blue-900 sm:text-red-900">We Are {props.data.name}.</h1>
-          <p className="text-white text-2xl pt-8">{typedText}</p>
-          <div className="social-icons mt-4 pt-4 space-x-8">
+          <h1 className="text-white pb-8 font-bold text-2xl sm:text-4xl md:text-6xl lg-text-8xl, xl:text-10xl">We Are {props.data.name}.</h1>
+          <p className="text-white text-base pt-8 sm:text-xl mg:text-2xl xl:text-4xl">{typedText}</p>
+          <div className="social-icons mt-4 pt-8 space-x-8">
             <a href="https://www.facebook.com">
-              <FontAwesomeIcon icon={faFacebook} className="text-white text-3xl" />
+              <FontAwesomeIcon icon={faFacebook} className="text-white text-2xl sm:text-3xl" />
             </a>
             <a href="https://www.twitter.com">
-              <FontAwesomeIcon icon={faTwitter} className="text-white text-3xl" />
+              <FontAwesomeIcon icon={faTwitter} className="text-white text-2xl sm:text-3xl" />
             </a>
             <a href="https://www.instagram.com">
-              <FontAwesomeIcon icon={faInstagram} className="text-white text-3xl" />
+              <FontAwesomeIcon icon={faInstagram} className="text-white text-2xl sm:text-3xl" />
             </a>
             <a href="https://www.linkedin.com">
-              <FontAwesomeIcon icon={faLinkedin} className="text-white text-3xl" />
+              <FontAwesomeIcon icon={faLinkedin} className="text-white text-2xl sm:text-3xl" />
             </a>
             <a href="https://www.github.com">
-              <FontAwesomeIcon icon={faGithub} className="text-white text-3xl" />
+              <FontAwesomeIcon icon={faGithub} className="text-white text-2xl sm:text-3xl" />
             </a>
             <a href="https://www.slack.com">
-              <FontAwesomeIcon icon={faSlack} className="text-white text-3xl" />
+              <FontAwesomeIcon icon={faSlack} className="text-white text-2xl sm:text-3xl" />
             </a>
           </div>
           {/* <button className="mt-4 bg-white text-black font-bold py-2 px-4 rounded" onClick={handleGetStartedClick}>
