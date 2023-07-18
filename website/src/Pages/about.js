@@ -11,7 +11,6 @@ const AboutPage = () => {
       <Navbar />
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div style={{ width: '75%' }}>
-          <h1 className='text-blue-900 pt-12 text-2xl text-bold pb-4 pl-8'>ABOUT DREXEL AI: </h1>
           <PurposeComponent data={club_data.main} />
           <TeamPage/>
           <ContactUsPage/>
