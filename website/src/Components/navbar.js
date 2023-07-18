@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className="bg-blue-900">
       <nav className="container mx-auto py-4">
         <div className="flex justify-between items-center">
-          <NavLink to="/" className="text-white text-2xl">
+          <NavLink to="/" className="text-white text-2xl pl-4 sm:pl-1">
             <FontAwesomeIcon icon={faHome} />
           </NavLink>
           <div className={`md:hidden ${isMobileMenuOpen ? "flex space-x-6" : "hidden"}`}>
@@ -46,7 +46,7 @@ const Navbar = () => {
             </a>
           </div>
           {/* Hamburger menu */}
-          <div className="md:hidden">
+          <div className="md:hidden pr-4">
             <button className="text-white" onClick={toggleMobileMenu}>
               <svg
                 className="w-6 h-6"
