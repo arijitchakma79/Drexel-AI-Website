@@ -12,13 +12,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-blue-900 bg-opacity-50">
+    <div className="bg-blue-900">
       <nav className="container mx-auto py-4">
         <div className="flex justify-between items-center">
           <NavLink to="/" className="text-white text-2xl">
             <FontAwesomeIcon icon={faHome} />
           </NavLink>
-          <div className={`md:hidden ${isMobileMenuOpen ? "flex" : "hidden"}`}>
+          <div className={`md:hidden ${isMobileMenuOpen ? "flex space-x-6" : "hidden"}`}>
             {/* Mobile menu items */}
             <NavLink
               to="/about"
@@ -64,11 +64,11 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex space-x-12">
             {/* About us section */}
             <NavLink
               to="/about"
-              className="text-red-700 hover:text-gray-900 font-medium text-xl lg:text-lg xl:text-lg"
+              className="text-white hover:text-gray-900 font-medium text-xl lg:text-lg xl:text-lg"
             >
               About Us
             </NavLink>
@@ -76,7 +76,7 @@ const Navbar = () => {
             {/* Research Section */}
             <NavLink
               to="/research"
-              className="text-red-700 hover:text-gray-900 font-medium text-xl lg:text-lg xl:text-lg"
+              className="text-white hover:text-gray-900 font-medium text-xl lg:text-lg xl:text-lg"
             >
               Research
             </NavLink>
@@ -84,7 +84,7 @@ const Navbar = () => {
             {/* Project Section */}
             <NavLink
               to="/projects"
-              className="text-red-700 hover:text-gray-900 font-medium text-xl lg:text-lg xl:text-lg"
+              className="text-white hover:text-gray-900 font-medium text-xl lg:text-lg xl:text-lg"
             >
               Projects
             </NavLink>
@@ -92,7 +92,7 @@ const Navbar = () => {
             {/* Events */}
             <a
               href="https://drexel.campuslabs.com/engage/organization/drexelai"
-              className="text-red-700 hover:text-gray-900 font-medium text-xl lg:text-lg xl:text-lg"
+              className="text-white hover:text-gray-900 font-medium text-xl lg:text-lg xl:text-lg"
             >
               Events
             </a>
